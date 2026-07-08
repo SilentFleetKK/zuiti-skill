@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <pattern id="paper" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <line x1="0" y1="0" x2="0" y2="24" stroke="#eadfce" stroke-width="1" opacity="0.45"/>
+    </pattern>
+  </defs>
+  <rect width="1080" height="1080" fill="#f8f0e3"/>
+  <rect width="1080" height="1080" fill="url(#paper)" opacity="0.8"/>
+  <rect x="38" y="38" width="1004" height="1004" fill="none" stroke="#d8c8b2" stroke-width="2"/>
+  <line x1="86" y1="105" x2="155" y2="105" stroke="#b9472f" stroke-width="6"/>
+  <text x="178" y="117" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="26" font-weight="800" letter-spacing="4" fill="#1f1c19">ZUITI · 老板周末派活</text>
+  <text x="78" y="174" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="700" fill="#b9472f">对方发来</text>
+  <text x="78" y="205" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="36" font-weight="500" fill="#6a6158"><tspan x="78" dy="0">在吗？PPT 周末帮我优化优化。</tspan><tspan x="78" dy="55.8">不用太精细，你效率高，半天就搞定。</tspan></text>
+  <text x="78" y="340" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="700" fill="#b9472f">潜台词翻译</text>
+  <text x="78" y="380" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="52" font-weight="800" fill="#1f1c19"><tspan x="78" dy="0">“半天就搞定”不是体谅，</tspan><tspan x="78" dy="69.7">是把你的周末先定价成小事。</tspan></text>
+  <rect x="78" y="578" width="924" height="262" rx="20" fill="#fff8eb" stroke="#ddcfba"/>
+  <text x="104" y="625" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="800" fill="#b9472f">绵里藏针版</text>
+  <text x="104" y="655" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="34" font-weight="500" fill="#2a2520"><tspan x="104" dy="0">好的领导。不过“半天搞定”我不敢打包票。</tspan><tspan x="104" dy="51.0">给大老板看的东西，我不想按“不用太精细”的标准来。</tspan><tspan x="104" dy="51.0">我周末排一下，时间先记成调休哈。</tspan></text>
+  <line x1="78" y1="902" x2="1002" y2="902" stroke="#d8c8b2" stroke-width="2"/>
+  <text x="78" y="955" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="800" fill="#1f1c19">嘴替.skill</text>
+  <text x="575" y="955" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="600" fill="#6f655a">npx skills add SilentFleetKK/zuiti-skill</text>
+  <text x="78" y="1000" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" fill="#8b8073">把阴阳怪气翻译成人话，把憋屈回复成体面。</text>
+</svg>

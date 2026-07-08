@@ -45,11 +45,21 @@ zuiti-skill/
 ├── SKILL.md            # 嘴替本体，可直接安装使用
 ├── README.md
 ├── INSTALL.md
+├── assets/             # README 视觉资产
+├── promo/              # 传播卡片
+├── tools/              # 传播素材生成脚本
+├── personas/           # 专属嘴替模板
 ├── references/
-│   └── 分寸与边界.md    # 三档尺度的详细说明
+│   ├── 分寸与边界.md
+│   ├── 潜台词判断框架.md
+│   ├── 风险评分卡.md
+│   └── 个人口吻蒸馏模板.md
 ├── examples/           # 真实对话示例
 │   ├── 职场.md
 │   ├── 亲密关系.md
 │   └── 对外沟通.md
+├── COMMUNITY.md
+├── CONTRIBUTING.md
+├── ROADMAP.md
 └── zuiti-personas/     # 生成的专属嘴替存放处（用户自己的）
 ```

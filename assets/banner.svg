@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="620" viewBox="0 0 1520 620">
+  <defs>
+    <pattern id="paper" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <line x1="0" y1="0" x2="0" y2="26" stroke="#eadfce" stroke-width="1" opacity="0.45"/>
+    </pattern>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#2b2118" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1520" height="620" fill="#f6efe2"/>
+  <rect width="1520" height="620" fill="url(#paper)" opacity="0.8"/>
+  <rect x="70" y="62" width="1380" height="496" rx="34" fill="#fffaf0" stroke="#d9cbb7" filter="url(#softShadow)"/>
+  <text x="126" y="128" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="5" fill="#b9472f">ZUITI.SKILL</text>
+  <line x1="126" y1="152" x2="236" y2="152" stroke="#b9472f" stroke-width="6"/>
+  <text x="126" y="245" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="72" font-weight="800" fill="#1f1c19">把阴阳怪气翻译成人话</text>
+  <text x="126" y="335" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="72" font-weight="800" fill="#1f1c19">把憋屈回复成<tspan fill="#b9472f">体面</tspan></text>
+  <text x="130" y="418" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30" fill="#6f655a">潜台词翻译 + 误读风险 + 三档回复 + 发送建议</text>
+  <g transform="translate(980 160)">
+    <rect x="0" y="0" width="350" height="235" rx="24" fill="#17130f"/>
+    <text x="34" y="58" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" fill="#d6c6ad">难回消息</text>
+    <text x="34" y="112" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="700" fill="#fff6e8">“顺便加一下呗”</text>
+    <text x="34" y="172" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" fill="#f05b3c">→ 先评估范围，再谈排期</text>
+  </g>
+  <text x="126" y="510" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f1c19">npx skills add SilentFleetKK/zuiti-skill</text>
+</svg>
