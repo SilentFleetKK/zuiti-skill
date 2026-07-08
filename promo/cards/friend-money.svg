@@ -12,10 +12,10 @@
   <text x="78" y="174" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="700" fill="#b9472f">对方发来</text>
   <text x="78" y="205" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="36" font-weight="500" fill="#6a6158"><tspan x="78" dy="0">最近手头是不是宽裕点了？</tspan><tspan x="78" dy="55.8">上次那个事儿……你懂的哈，不急不急。</tspan></text>
   <text x="78" y="340" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="700" fill="#b9472f">潜台词翻译</text>
-  <text x="78" y="380" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="52" font-weight="800" fill="#1f1c19"><tspan x="78" dy="0">他欠你钱，却把话题反转成</tspan><tspan x="78" dy="69.7">“你是不是不好意思催”。</tspan></text>
+  <text x="78" y="380" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="52" font-weight="800" fill="#1f1c19"><tspan x="78" dy="0">他欠你钱，却暗示</tspan><tspan x="78" dy="69.7">“你宽裕，就别催我”。</tspan></text>
   <rect x="78" y="578" width="924" height="262" rx="20" fill="#fff8eb" stroke="#ddcfba"/>
   <text x="104" y="625" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="800" fill="#b9472f">绵里藏针版</text>
-  <text x="104" y="655" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="34" font-weight="500" fill="#2a2520"><tspan x="104" dy="0">说到那个事儿，我也一直记着呢。</tspan><tspan x="104" dy="51.0">你看这个月方便不？不用一次性，分次也行，</tspan><tspan x="104" dy="51.0">咱把它了了，彼此都轻松。</tspan></text>
+  <text x="104" y="655" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="34" font-weight="500" fill="#2a2520"><tspan x="104" dy="0">我这边紧紧巴巴的哈～那事儿我也记着呢。</tspan><tspan x="104" dy="51.0">这个月方便不？分次也行，</tspan><tspan x="104" dy="51.0">咱把它了了，彼此都轻松。</tspan></text>
   <line x1="78" y1="902" x2="1002" y2="902" stroke="#d8c8b2" stroke-width="2"/>
   <text x="78" y="955" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="800" fill="#1f1c19">嘴替.skill</text>
   <text x="575" y="955" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="600" fill="#6f655a">npx skills add SilentFleetKK/zuiti-skill</text>

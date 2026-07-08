@@ -20,9 +20,29 @@
 | 朋友借钱不还 | [`promo/cards/friend-money.svg`](promo/cards/friend-money.svg) |
 | 前任深夜试探 | [`promo/cards/ex-midnight.svg`](promo/cards/ex-midnight.svg) |
 
+## 官方场景包
+
+预置某个高频场景话术库的专用嘴替，由维护者出品：
+
+| 场景包 | 专治 | 仓库 |
+|---|---|---|
+| 画饼包 | 老板用未来好处和情怀换你现在的付出 | [zuiti-huabing](https://github.com/SilentFleetKK/zuiti-huabing) |
+| 催婚包 | 亲戚父母用关心和比较施压婚恋进度 | [zuiti-cuihun](https://github.com/SilentFleetKK/zuiti-cuihun) |
+| 甲方包 | 甲方压价、加需求、拖款、无限改稿 | [zuiti-jiafang](https://github.com/SilentFleetKK/zuiti-jiafang) |
+
+## 社区专属嘴替 / 场景包索引
+
+> 以下由各自作者独立维护，未经本仓库审计，收录不代表背书，安装前请自行甄别 skill 内的指令与脚本。
+
+| 作品 | 作者 | 说明 |
+|---|---|---|
+| _(欢迎提 PR 收录你的)_ | | |
+
+收录方式：把你蒸馏的专属嘴替或自制场景包放进自己的仓库，提 PR 在上表加一行——列出仓库链接、你的用户名、一句话说明。**star 归你**，门槛见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
 ## 投稿方式
 
-开 Issue，选择"难回消息案例投稿"模板。
+[开一个新 Issue](https://github.com/SilentFleetKK/zuiti-skill/issues/new?template=difficult-message.yml)，选择"难回消息案例投稿"模板。
 
 投稿前请脱敏：
 

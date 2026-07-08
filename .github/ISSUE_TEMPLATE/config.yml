@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 社区讨论 / Community Discussions
+    url: https://github.com/SilentFleetKK/zuiti-skill/discussions
+    about: 聊聊难回的消息、分享你的三档回复、交流场景包与专属嘴替。想灌水提问也来这里。
+  - name: 📇 场景包 / 专属嘴替收录
+    url: https://github.com/SilentFleetKK/zuiti-skill/blob/main/COMMUNITY.md
+    about: 做了自己的场景包或专属嘴替？放你自己的仓库（star 归你），提一行 PR 收录进索引。

@@ -1,0 +1,68 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate SKILL.md frontmatter
+        run: |
+          python3 - <<'PY'
+          import sys, pathlib
+          text = pathlib.Path("SKILL.md").read_text(encoding="utf-8")
+          assert text.startswith("---"), "SKILL.md 缺少 frontmatter"
+          fm = text.split("---", 2)[1]
+          for key in ("name:", "description:", "user-invocable:"):
+              assert key in fm, f"SKILL.md frontmatter 缺少 {key}"
+          print("SKILL.md frontmatter OK")
+          PY
+
+      - name: Validate all SVG assets parse
+        run: |
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET, pathlib, sys
+          svgs = list(pathlib.Path(".").rglob("*.svg"))
+          assert svgs, "没有找到任何 SVG"
+          for p in svgs:
+              ET.parse(p)
+              print("ok", p)
+          print(f"{len(svgs)} SVG 全部解析通过")
+          PY
+
+      - name: Check README local links resolve
+        run: |
+          python3 - <<'PY'
+          import re, pathlib, sys
+          bad = []
+          for md in pathlib.Path(".").rglob("*.md"):
+              if ".github" in md.parts:
+                  continue
+              for m in re.finditer(r"\]\(([^)]+)\)", md.read_text(encoding="utf-8")):
+                  target = m.group(1).split("#")[0].strip()
+                  if not target or target.startswith(("http://", "https://", "mailto:")):
+                      continue
+                  # GitHub 网页相对链接（如 ../../issues/new?...）不是仓库文件，跳过
+                  if "?" in target or target.startswith("../../"):
+                      continue
+                  # 解析相对当前文件的路径
+                  candidate = (md.parent / target).resolve()
+                  if not candidate.exists():
+                      bad.append(f"{md}: {target}")
+          if bad:
+              print("失效的本地链接:")
+              print("\n".join(bad))
+              sys.exit(1)
+          print("本地链接全部有效")
+          PY
