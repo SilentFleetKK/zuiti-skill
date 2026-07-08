@@ -57,7 +57,8 @@ zuiti-skill/
 ├── examples/           # 真实对话示例
 │   ├── 职场.md
 │   ├── 亲密关系.md
-│   └── 对外沟通.md
+│   ├── 对外沟通.md
+│   └── 通用场景.md
 ├── COMMUNITY.md
 ├── CONTRIBUTING.md
 ├── ROADMAP.md
