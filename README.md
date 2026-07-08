@@ -154,23 +154,23 @@
 
 ## 安装
 
-打开你在用的 agent（Claude Code / Codex / Cursor / OpenClaw 等），告诉它：
+三种方式，挑顺手的：
 
-```text
-帮我安装这个 skill：https://github.com/SilentFleetKK/zuiti-skill
-```
+**① 让 agent 代劳**（最省事）——在 Claude Code / Codex / Cursor / OpenClaw 里对它说一句：
 
-或用通用 CLI 安装器：
+> 帮我把这个 skill 装上：https://github.com/SilentFleetKK/zuiti-skill
+
+**② 命令行一条**：
 
 ```bash
 npx skills add SilentFleetKK/zuiti-skill
 ```
 
-它会自动识别你的 runtime 并放到正确目录。想指定环境就加 `-a claude-code` / `-a codex` / `-a cursor` 等参数。
+装好器会认出你当前的 runtime 自己归位；想钦点某个环境，补一个 `-a claude-code` / `-a codex` / `-a cursor` 就行。
 
-即使你的 runtime 不支持自动加载，也可以直接把 `SKILL.md` 的内容粘进对话。它本质就是一份 markdown。
+**③ 连装都省了**——把 `SKILL.md` 全文复制、贴进对话框即可。它就是一段纯 markdown prompt，哪个模型都读得懂。
 
-手动安装路径见 [INSTALL.md](INSTALL.md)。
+各 runtime 手动落盘的目录见 [INSTALL.md](INSTALL.md)。
 
 ---
 
@@ -206,7 +206,7 @@ npx skills add SilentFleetKK/zuiti-skill
 | [催婚包](https://github.com/SilentFleetKK/zuiti-cuihun) | 亲戚父母用关心和比较施压婚恋进度 | `/催婚` | `npx skills add SilentFleetKK/zuiti-cuihun` |
 | [甲方包](https://github.com/SilentFleetKK/zuiti-jiafang) | 甲方压价、加需求、拖款、无限改稿 | `/甲方` | `npx skills add SilentFleetKK/zuiti-jiafang` |
 
-做了自己的场景包或专属嘴替？放你自己的仓库、star 归你，提一行 PR 收录进 [COMMUNITY.md](COMMUNITY.md) 索引。规则见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+做了自己的场景包或专属嘴替？放在你自己的仓库里、star 全记你名下，开个 PR 登记到 [COMMUNITY.md](COMMUNITY.md) 的索引表即可。规则见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ---
 
@@ -254,9 +254,9 @@ npx skills add SilentFleetKK/zuiti-skill
 
 - 💬 **[Discussions](https://github.com/SilentFleetKK/zuiti-skill/discussions)**：聊聊难回的消息、晒你的三档回复、交流场景包与专属嘴替。
 - 📮 **投稿难回消息案例**：[开一个 Issue](https://github.com/SilentFleetKK/zuiti-skill/issues/new?template=difficult-message.yml)，选"难回消息案例投稿"模板（记得脱敏）。被收录进 `examples/` 或做成传播卡。
-- 📇 **收录你的场景包 / 专属嘴替**：放你自己的仓库、star 归你，提 PR 加进 [COMMUNITY.md](COMMUNITY.md) 索引。
+- 📇 **收录你的场景包 / 专属嘴替**：放在自己的仓库里、star 全记你名下，开 PR 登记到 [COMMUNITY.md](COMMUNITY.md) 的索引表。
 
-双轨制：**核心 SKILL.md 护方法论，不接受外部直接改动**（改进走 Issue 讨论、采纳致谢）；**社区场景包和专属嘴替走索引、star 归贡献者**。详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+两条轨道：**核心 SKILL.md 由维护者把着方法论，外部不直接改**（想改进先开 Issue 聊，采纳了在提交里署名致谢）；**你自己做的场景包和专属嘴替单独成仓、只登记索引、star 全归作者本人**。详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ---
 

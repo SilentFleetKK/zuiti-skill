@@ -36,7 +36,7 @@ npx skills add SilentFleetKK/zuiti-skill -a codex
 
 ## 不想装？
 
-直接把 `SKILL.md` 全文粘进对话上下文，它就是一份 markdown，任何模型都能读。
+懒得装就把 `SKILL.md` 全文复制、贴进对话框——纯文本 prompt，哪个模型都读得懂。
 
 ## 目录结构
 
