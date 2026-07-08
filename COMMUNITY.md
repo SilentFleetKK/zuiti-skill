@@ -20,6 +20,7 @@
 | 甲方改回第一版 | [`promo/cards/client-v1.svg`](promo/cards/client-v1.svg) |
 | 朋友借钱不还 | [`promo/cards/friend-money.svg`](promo/cards/friend-money.svg) |
 | 前任深夜试探 | [`promo/cards/ex-midnight.svg`](promo/cards/ex-midnight.svg) |
+| 帮我砍一刀 | [`promo/cards/kan-yi-dao.svg`](promo/cards/kan-yi-dao.svg) |
 
 ## 官方场景包
 
