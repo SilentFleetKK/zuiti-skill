@@ -1,0 +1,6 @@
+# 蒸馏出的专属嘴替是用户个人数据，不入库
+zuiti-personas/
+
+# 本地环境
+.claude/
+.DS_Store
