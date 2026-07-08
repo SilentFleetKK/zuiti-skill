@@ -36,9 +36,10 @@
 
 | 作品 | 作者 | 说明 |
 |---|---|---|
-| _(欢迎提 PR 收录你的)_ | | |
+| [zuiti-persona-template](https://github.com/SilentFleetKK/zuiti-persona-template) | @SilentFleetKK | 官方起手模板：点 **Use this template** 一键开一个属于你的专属嘴替仓库 |
+| **⬇️ 下一行就是你** | | 蒸馏一个你自己的，一行 PR 就上榜 |
 
-收录方式：把你蒸馏的专属嘴替或自制场景包放进自己的仓库，开 PR 在上表加一行——列出仓库链接、你的用户名、一句话说明。**star 全归你自己**，门槛见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+**投了就上榜，一行 PR 的事。** 把你蒸馏的专属嘴替或自制场景包放进自己的仓库（或直接用上面的模板一键生成），开个 PR 在表里加一行——仓库链接、你的用户名、一句话说明。**star 全归你自己**，作品也有了自己的门牌。门槛见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ## 投稿方式
 

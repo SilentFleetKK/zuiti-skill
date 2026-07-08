@@ -193,9 +193,9 @@ npx skills add SilentFleetKK/zuiti-skill
 
 装好器会认出你当前的 runtime 自己归位；想钦点某个环境，补一个 `-a claude-code` / `-a codex` / `-a cursor` 就行。
 
-**③ 连装都省了**——把 `SKILL.md` 全文复制、贴进对话框即可。它就是一段纯 markdown prompt，哪个模型都读得懂。
+**③ 连装都省了**——把 [`zuiti-lite.md`](zuiti-lite.md)（单文件精简版，含三档定义 + 三个标杆案例）整份复制、贴进任何 AI 对话框就能用；想要全功能就粘完整 `SKILL.md`。
 
-各 runtime 手动落盘的目录见 [INSTALL.md](INSTALL.md)。
+各 runtime 手动落盘的目录见 [INSTALL.md](INSTALL.md)。想在嘴替基础上做自己的版本？点仓库右上角 **Use this template** 一键开一个你自己的仓库。
 
 ---
 
