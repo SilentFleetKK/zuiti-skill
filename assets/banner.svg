@@ -18,8 +18,8 @@
   <g transform="translate(980 160)">
     <rect x="0" y="0" width="350" height="235" rx="24" fill="#17130f"/>
     <text x="34" y="58" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" fill="#d6c6ad">难回消息</text>
-    <text x="34" y="112" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="700" fill="#fff6e8">“顺便加一下呗”</text>
-    <text x="34" y="172" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" fill="#f05b3c">→ 先评估范围，再谈排期</text>
+    <text x="34" y="112" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="700" fill="#fff6e8">“不急不急”</text>
+    <text x="34" y="172" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" fill="#f05b3c">→ 把欠账定成有期限的事</text>
   </g>
   <text x="126" y="510" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f1c19">npx skills add SilentFleetKK/zuiti-skill</text>
 </svg>

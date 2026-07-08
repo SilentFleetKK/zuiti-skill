@@ -207,16 +207,17 @@ def animated_hero():
         draw.ellipse(box((cx - pulse, top + 118 - pulse, cx + pulse, top + 118 + pulse)), fill=red)
 
     def draw_input(layer, x, y, alpha):
-        draw_round(layer, (x, y, x + 304, y + 112), 18, PANEL, "#ddcfba", alpha=alpha)
-        draw_text(layer, (x + 24, y + 20), "难回消息", 15, RED, "bold", alpha)
-        draw_text(layer, (x + 24, y + 50), "这个需求顺便加一下呗，", 20, INK, "bold", alpha)
-        draw_text(layer, (x + 24, y + 82), "很简单，不影响进度吧？", 20, INK, "bold", alpha)
+        draw_round(layer, (x, y, x + 336, y + 126), 18, PANEL, "#ddcfba", alpha=alpha)
+        draw_text(layer, (x + 24, y + 20), "朋友发来", 15, RED, "bold", alpha)
+        draw_text(layer, (x + 24, y + 50), "最近手头是不是宽裕点了？", 18, INK, "bold", alpha)
+        draw_text(layer, (x + 24, y + 80), "上次那个事儿……你懂的哈，", 18, INK, "bold", alpha)
+        draw_text(layer, (x + 24, y + 108), "不急不急。", 18, INK, "bold", alpha)
 
     def draw_translation(layer, alpha):
-        draw_round(layer, (628, 112, 878, 248), 22, "#17130f", None, alpha=alpha)
+        draw_round(layer, (628, 112, 878, 260), 22, "#17130f", None, alpha=alpha)
         draw_text(layer, (656, 138), "嘴替翻译", 15, "#f05b3c", "bold", alpha)
-        draw_text(layer, (656, 174), "“顺便”“很简单”", 23, "#fff6e8", "bold", alpha)
-        draw_text(layer, (656, 210), "是在替你决定成本", 23, "#fff6e8", "bold", alpha)
+        draw_text(layer, (656, 174), "他欠你钱，", 24, "#fff6e8", "bold", alpha)
+        draw_text(layer, (656, 211), "却把主动权拿走。", 24, "#fff6e8", "bold", alpha)
 
     def draw_reply(layer, idx, title, body, alpha):
         y = 284 + idx * 58 - (1 - ease(alpha)) * 12
@@ -256,11 +257,11 @@ def animated_hero():
 
         static = Image.new("RGBA", base.size, (0, 0, 0, 0))
         draw_corner_marks(static, ease(t / 0.12))
-        draw_text(static, (66, 58), "ZUITI · SKILL  |  MESSAGE DISTILLER", 11, "#9a8878", "bold", 1, mono_font=True)
+        draw_text(static, (66, 58), "ZUITI.SKILL  |  MESSAGE DISTILLER", 12, "#9a8878", "bold", 1)
         draw_line(static, (66, 82, 132, 82), RED, 3, 1)
-        draw_text(static, (66, 118), "把难回消息", 38, INK, "bold")
-        draw_text(static, (66, 166), "回成体面", 38, RED, "bold")
-        draw_text(static, (66, 222), "先翻译潜台词，再给三档回复。", 19, MUTED, "regular")
+        draw_text(static, (66, 118), "朋友欠钱不还", 38, INK, "bold")
+        draw_text(static, (66, 166), "还反过来试探你", 38, RED, "bold")
+        draw_text(static, (66, 222), "别吵，先把账拉回明面上。", 19, MUTED, "regular")
         base.alpha_composite(static)
 
         apparatus_layer = Image.new("RGBA", base.size, (0, 0, 0, 0))
@@ -275,9 +276,9 @@ def animated_hero():
 
         # Process labels around the line-art device.
         labels = [
-            (0.30, "潜台词", 390, 170),
-            (0.42, "误读风险", 372, 300),
-            (0.54, "三档回复", 510, 360),
+            (0.30, "欠账反转", 344, 170),
+            (0.42, "不急话术", 372, 300),
+            (0.54, "定个时间", 510, 360),
         ]
         label_layer = Image.new("RGBA", base.size, (0, 0, 0, 0))
         for start, text, x, y in labels:
@@ -297,9 +298,9 @@ def animated_hero():
         base.alpha_composite(trans_layer)
 
         replies = [
-            ("体面版", "我先评估工作量。"),
-            ("绵里藏针", "影响排期我同步确认。"),
-            ("掀桌版", "范围和成本先说清。"),
+            ("体面版", "方便时安排一下。"),
+            ("绵里藏针", "这个月定个时间？"),
+            ("掀桌版", "账还是得算明白。"),
         ]
         reply_layer = Image.new("RGBA", base.size, (0, 0, 0, 0))
         for idx, (title, body) in enumerate(replies):
@@ -310,7 +311,7 @@ def animated_hero():
 
         end_alpha = ease((t - 0.78) / 0.12)
         footer = Image.new("RGBA", base.size, (0, 0, 0, 0))
-        draw_text(footer, (66, 462), "潜台词翻译 + 误读风险 + 三档回复 + 发送建议", 17, MUTED, "bold", end_alpha)
+        draw_text(footer, (104, 462), "推荐：绵里藏针版，把钱拉回明面上，也给对方留台阶", 17, MUTED, "bold", end_alpha)
         draw_text(footer, (628, 463), "npx skills add SilentFleetKK/zuiti-skill", 12, INK, "regular", end_alpha, mono_font=True)
         base.alpha_composite(footer)
 
@@ -414,8 +415,8 @@ def banner():
   <g transform="translate(980 160)">
     <rect x="0" y="0" width="350" height="235" rx="24" fill="#17130f"/>
     <text x="34" y="58" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="20" fill="#d6c6ad">难回消息</text>
-    <text x="34" y="112" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="700" fill="#fff6e8">“顺便加一下呗”</text>
-    <text x="34" y="172" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" fill="#f05b3c">→ 先评估范围，再谈排期</text>
+    <text x="34" y="112" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="700" fill="#fff6e8">“不急不急”</text>
+    <text x="34" y="172" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" fill="#f05b3c">→ 把欠账定成有期限的事</text>
   </g>
   <text x="126" y="510" font-family="Inter, PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f1c19">npx skills add SilentFleetKK/zuiti-skill</text>
 </svg>
@@ -437,8 +438,8 @@ def banner_png():
     d.text((130, 430), "潜台词翻译 + 误读风险 + 三档回复 + 发送建议", font=font(32), fill=MUTED)
     rounded(d, (990, 160, 1348, 402), 28, fill="#17130f")
     d.text((1026, 210), "难回消息", font=font(23, "bold"), fill="#d6c6ad")
-    d.text((1026, 275), "“顺便加一下呗”", font=font(34, "bold"), fill="#fff6e8")
-    d.text((1026, 338), "→ 先评估范围，再谈排期", font=font(26, "bold"), fill="#f05b3c")
+    d.text((1026, 275), "“不急不急”", font=font(34, "bold"), fill="#fff6e8")
+    d.text((1026, 338), "→ 把欠账定成有期限的事", font=font(24, "bold"), fill="#f05b3c")
     d.text((126, 515), "npx skills add SilentFleetKK/zuiti-skill", font=ImageFont.truetype(FONT_MONO, 26), fill=INK)
     save_png(ROOT / "assets" / "banner.png", img)
 
@@ -451,10 +452,10 @@ def hero_poster_png():
     rounded(d, (56, 50, 1544, 850), 36, fill="#fffaf0", outline=LINE, width=2)
 
     d.text((105, 108), "嘴替.skill", font=font(42, "bold"), fill=INK)
-    d.text((105, 168), "把难回消息", font=font(78, "bold"), fill=INK)
-    d.text((105, 262), "回成体面", font=font(78, "bold"), fill=RED)
-    d.text((108, 365), "先翻译潜台词，再给三档回复。", font=font(38, "bold"), fill=INK)
-    d.text((108, 420), "不是帮你骂人，是帮你有边界、有分寸、不吃亏。", font=font(28), fill=MUTED)
+    d.text((105, 168), "朋友欠钱不还", font=font(68, "bold"), fill=INK)
+    d.text((105, 254), "还反过来试探你", font=font(68, "bold"), fill=RED)
+    d.text((108, 355), "先把“不急不急”翻译清楚。", font=font(36, "bold"), fill=INK)
+    d.text((108, 410), "不吵、不翻旧账，把欠账变成有期限的事。", font=font(28), fill=MUTED)
 
     steps = [
         ("01", "潜台词翻译", "看清对方在施压、试探、甩锅，还是只是焦虑。"),
@@ -471,16 +472,17 @@ def hero_poster_png():
         y += 76
 
     rounded(d, (835, 125, 1450, 755), 32, fill="#17130f")
-    d.text((885, 178), "对方发来", font=font(25, "bold"), fill="#d6c6ad")
-    rounded(d, (885, 220, 1398, 328), 22, fill="#fff8eb")
-    d.text((920, 250), "这个需求顺便加一下呗，", font=font(29, "bold"), fill=INK)
-    d.text((920, 292), "很简单，不影响进度吧？", font=font(29, "bold"), fill=INK)
+    d.text((885, 178), "朋友发来", font=font(25, "bold"), fill="#d6c6ad")
+    rounded(d, (885, 220, 1398, 350), 22, fill="#fff8eb")
+    d.text((920, 246), "最近手头是不是宽裕点了？", font=font(27, "bold"), fill=INK)
+    d.text((920, 288), "上次那个事儿……你懂的哈，", font=font(27, "bold"), fill=INK)
+    d.text((920, 326), "不急不急。", font=font(27, "bold"), fill=INK)
     d.text((885, 390), "嘴替翻译", font=font(25, "bold"), fill="#f05b3c")
-    d.text((885, 438), "“顺便”“很简单”是在把范围", font=font(34, "bold"), fill="#fff6e8")
-    d.text((885, 486), "和成本先替你决定掉。", font=font(34, "bold"), fill="#fff6e8")
+    d.text((885, 438), "他欠你钱，", font=font(36, "bold"), fill="#fff6e8")
+    d.text((885, 486), "却把主动权拿走。", font=font(36, "bold"), fill="#fff6e8")
     rounded(d, (885, 565, 1398, 675), 22, fill="#fff8eb")
-    d.text((920, 592), "可以做，但我先评估工作量。", font=font(28, "bold"), fill=INK)
-    d.text((920, 634), "影响排期/报价的话我同步你确认。", font=font(28, "bold"), fill=INK)
+    d.text((920, 592), "说到那个事儿，我也一直记着呢。", font=font(26, "bold"), fill=INK)
+    d.text((920, 634), "你看这个月方便定个时间不？", font=font(26, "bold"), fill=INK)
     d.text((105, 805), "npx skills add SilentFleetKK/zuiti-skill", font=ImageFont.truetype(FONT_MONO, 28), fill=INK)
     save_png(ROOT / "assets" / "hero-poster.png", img)
 
